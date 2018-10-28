@@ -23,7 +23,7 @@ public class PropiedadesNumerosTest {
     @Test
     public void testEsPar() {
         System.out.println("esPar");
-        int n = 3;
+        int n = 2;
         PropiedadesNumeros instance = new PropiedadesNumeros();
         boolean expResult = false;
         boolean result = instance.esPar(n);
