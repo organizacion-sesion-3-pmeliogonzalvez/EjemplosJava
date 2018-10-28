@@ -23,9 +23,9 @@ public class PropiedadesNumerosTest {
     @Test
     public void testEsPar() {
         System.out.println("esPar");
-        int n = 5;
+        int n = 4;
         PropiedadesNumeros instance = new PropiedadesNumeros();
-        boolean expResult = false;
+        boolean expResult = true;
         boolean result = instance.esPar(n);
         assertEquals(expResult, result);
        
