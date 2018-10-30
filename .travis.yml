@@ -1,4 +1,6 @@
 language: java
 before_script:
    - sudo apt-get install ant-optional
+   - sudo apt-get install junit
+   
    
