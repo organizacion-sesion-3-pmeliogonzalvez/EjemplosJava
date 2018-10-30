@@ -10,6 +10,6 @@
  */
 public class PropiedadesNumeros {
     public boolean esPar(int m){
-        return m%2==0;
+        return m%2==1;
     }
 }
