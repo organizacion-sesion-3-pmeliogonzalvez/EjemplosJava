@@ -9,7 +9,7 @@
  * @author maria
  */
 public class PropiedadesNumeros {
-    public boolean esPar(int n){
-        return n%2==0;
+    public boolean esPar(int m){
+        return m%2==0;
     }
 }
