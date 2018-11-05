@@ -77,13 +77,13 @@
 
 
 
--<target name="run" depends="build">
+<target name="run" depends="build">
 
 
--<junit haltonfailure="yes" printsummary="on">
+<junit haltonfailure="yes" printsummary="on">
 
 
--<classpath>
+<classpath>
 
 <path refid="classpath.test"/>
 
@@ -94,14 +94,12 @@
 <formatter usefile="false" type="brief"/>
 
 
--<batchtest>
+<batchtest>
 
 <fileset dir="${test.src.dir}" includes="**/*Test*.java"/>
-
 </batchtest>
 
 </junit>
-
 </target>
 
 <!-- delete all class files -->
@@ -111,10 +109,10 @@
 
 
 
--<target name="clean">
+<target name="clean">
 
 
--<delete>
+<delete>
 
 <fileset dir="${basedir}" includes="**/*.class"/>
 
