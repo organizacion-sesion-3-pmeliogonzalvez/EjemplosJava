@@ -32,7 +32,7 @@ public class ArrayMayorTestParam {
     
     @Parameters
     public static Collection<Object[]> datos(){
-      return Arrays.asList(new Object[][]{{9,new int[]{1,9,5}},{9,new int[]{1,5,9}}});
+      return Arrays.asList(new Object[][]{{9,new int[]{1,9,5}},{5,new int[]{1,5,9}}});
     }
    
     /**
