@@ -70,55 +70,27 @@
     nbproject/build-impl.xml file. 
 
     -->
-	<!-- Test and build all files -->
-
-
-<!-- To run this: use "ant" (default) or "ant run" -->
-
-
-
-<target name="run" depends="build">
-
-
-<junit haltonfailure="yes" printsummary="on">
-
-
-<classpath>
-
-<path refid="classpath.test"/>
-
-<pathelement location="${test.build.dir}"/>
-
-</classpath>
-
-<formatter usefile="false" type="brief"/>
-
-
-<batchtest>
-
-<fileset dir="${test.src.dir}" includes="**/*Test*.java"/>
-</batchtest>
-
-</junit>
-</target>
-
-<!-- delete all class files -->
-
-
-<!-- To run this: use "ant clean" -->
-
-
-
-<target name="clean">
-
-
-<delete>
-
-<fileset dir="${basedir}" includes="**/*.class"/>
-
-</delete>
-
-<echo message="clean done"/>
-
-</target>
+ <!-- Test and build all files  -->
+  <!-- To run this: use "ant" (default) or "ant run" -->
+  <target name="run" depends="build">
+    <junit printsummary="on" haltonfailure="yes">
+        <classpath>
+          <path refid="classpath.test" />
+          <pathelement location="${test.build.dir}"/>
+        </classpath>
+        <formatter type="brief" usefile="false" />
+        <batchtest>
+            <fileset dir="${test.src.dir}" includes="**/*Test*.java" />
+        </batchtest>
+    </junit>
+  </target>
+   
+  <!-- delete all class files -->
+  <!-- To run this: use "ant clean" -->
+  <target name="clean">
+    <delete>
+        <fileset dir="${basedir}" includes="**/*.class" />
+    </delete>
+    <echo message="clean done" />
+  </target>
 </project>
